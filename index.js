@@ -138,6 +138,11 @@
 
 // document.write(5 + 6);
 
+
+
+
+
+
 let text = "The rain in SPAIN stays mainly in the plain"; 
 let arr = text.match(/ain/gi);
 if (arr === null) {
@@ -147,3 +152,32 @@ if (arr === null) {
 }
 console.log(arr)
 document.getElementById("demo").innerHTML = text.match(/ain/gi);
+
+
+
+
+
+
+
+
+// *******************************Practice of splice shift unshift pop and push********************************* 
+
+let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
+let largeCountries1 = ["Tuvalu","India","USA","Indonesia","Monaco"]
+
+// You need to help me fixup the largeCountries array so that 
+// China and Pakistan are added back into their respective places
+
+// Use push() & pop() and their counterparts unshift() & shift()
+// Google how to use unshift() and shift()
+
+largeCountries.splice(0,1 , "China")
+largeCountries.splice(4,1 , "Pakistan")
+
+console.log(largeCountries)
+
+largeCountries1.pop()
+largeCountries1.shift()
+largeCountries1.push("Pakistan")
+largeCountries1.unshift("China")
+console.log(largeCountries1)
