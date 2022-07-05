@@ -1,0 +1,169 @@
+body {
+    background-color: #1C1C1C;
+}
+
+.container {
+    background: #1F2937;
+    width: 438px;
+    height: 538px;
+    margin: auto;
+    margin-top: 45px;
+    position: relative;
+}
+
+.heading {
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    /* background-color: red; */
+    margin-top: 30px;
+    margin-left: 30px;
+    color: #FFFFFF;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 40px;
+    display: block;
+    /* or 100% */
+    letter-spacing: -0.025em;
+    z-index: 1;
+}
+
+.supporting {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin-left: 30px;
+    margin-top: 120px;
+    color: #D5D4D8;
+    display: block;
+    /* background-color: blue; */
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 220px;
+}
+
+.button button {
+    align-items: center;
+    padding: 3px 11px 3px 9px;
+    /* gap: 12px; */
+    background: #10B981;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    /* identical to box height, or 150% */
+
+
+    /* white */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.button button:hover
+{
+    background: #0f9e6f;
+}
+
+.passwordForm
+{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 300px;
+    width: 316px;
+}
+.passwordForm form input
+{
+    background: transparent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 2px solid #2F3E53;
+    outline: none;
+    width: 316px;
+}
+
+.rectangles
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 47px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 400px;
+}
+.rectangles button
+{
+    align-items: center;
+    padding: 6px 14px 6px 12px;
+    /* gap: 12px; */
+    background: #273549;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    /* identical to box height, or 150% */
+
+
+    /* white */
+
+    color: #55F991;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.rectangles button:hover
+{
+    background: #33435e;
+}
+
+
+@font-face {
+    font-family: Karla;
+    src: url(Karla.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(Inter.ttf);
+}

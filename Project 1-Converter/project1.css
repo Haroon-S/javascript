@@ -115,3 +115,7 @@ background: linear-gradient(180deg, #1F2937 40%, #001634 60%);
     top: 100.15px;
     text-align: center;
 }
+@font-face {
+    font-family: Inter;
+    src: url(Inter.ttf);
+}
