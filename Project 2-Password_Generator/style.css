@@ -9,6 +9,7 @@ body {
     margin: auto;
     margin-top: 45px;
     position: relative;
+    border-radius: 5px;
 }
 
 .heading {

@@ -16,17 +16,19 @@
             <p>Never use an insecure password again.</p>
         </div>
         <div class="button">
-            <button type="submit">Generate Passwords</button>
+            <button id="genrate-password-btn" onclick="generatePassword()" type="submit">Generate Passwords</button>
         </div>
         <div class="passwordForm">
             <form>
-                <input class="inputPassword" id="input" type="text" name="fname" oninput="conversions()"><br>
+                <input class="inputPassword" id="input-password" type="text" name="fname"><br>
               </form>
         </div>
         <div class="rectangles">
-            <button>qwertyuiopasdfg</button>
-            <button>qwertyuiopasdfg</button>
+            <button id="pass-1-btn" onclick="selectPassword1()"></button>
+            <button id="pass-2-btn" onclick="selectPassword2()"></button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
