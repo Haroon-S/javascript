@@ -1,3 +1,4 @@
+:root,
 body {
     background-color: #1C1C1C;
 }
@@ -10,6 +11,7 @@ body {
     margin-top: 45px;
     position: relative;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .heading {
@@ -19,16 +21,67 @@ body {
     /* background-color: red; */
     margin-top: 30px;
     margin-left: 30px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 40px;
+    display: block;
+    /* or 100% */
+    letter-spacing: -0.025em;
+    
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+            animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  }
+  @-webkit-keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @-webkit-keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+}
+span {
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    /* background-color: red; */
+    margin-top: 55px;
+    margin-left: 30px;
     color: #FFFFFF;
     font-family: 'Karla';
     font-style: normal;
     font-weight: 800;
-    font-size: 15px;
+    font-size: 30px;
     line-height: 40px;
     display: block;
     /* or 100% */
     letter-spacing: -0.025em;
     z-index: 1;
+    
 }
 
 .supporting {
@@ -121,7 +174,7 @@ body {
     gap: 47px;
     position: absolute;
     margin-left: 30px;
-    margin-top: 400px;
+    margin-top: 370px;
 }
 .rectangles button
 {
@@ -151,11 +204,19 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
+    display:none;
 }
 
 .rectangles button:hover
 {
     background: #33435e;
+}
+
+.checkbox
+{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 430px;
 }
 
 

@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1F2937">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="heading">
-            <h1>Generate a <span style="color:#4ADF86"> random Password</span></h1>
+            Generate 
         </div>
+        <br>
+        <span style="color:#4ADF86"> random Password</span>
         <div class="supporting">
             <p>Never use an insecure password again.</p>
         </div>
@@ -27,8 +32,20 @@
             <button id="pass-1-btn" onclick="selectPassword1()"></button>
             <button id="pass-2-btn" onclick="selectPassword2()"></button>
         </div>
+        <div class="checkbox d-inline-flex p-2 gap-5">
+            <div class="form-check form-switch">
+                <input class="form-check-input fs-6 " type="checkbox" role="switch" id="number-check" name="number-check" checked>
+                <label class="form-check-label text-white fs-6" for="number">Number</label>
+              </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input fs-6" type="checkbox" role="switch" id="symbol-check" name="symbol-check" checked>
+                <label class="form-check-label text-white fs-6" for="symbol">Symbols</label>
+              </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
