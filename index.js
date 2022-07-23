@@ -181,3 +181,21 @@ largeCountries1.shift()
 largeCountries1.push("Pakistan")
 largeCountries1.unshift("China")
 console.log(largeCountries1)
+
+
+    // create element
+    // set text content
+    // append to ul
+    const li = document.createElement("li")
+    li.textContent = myLeads[i]
+    ulEl.append(li)
+
+
+
+// we use tis to store in localStorage with its method like setItem(key,value) and getItem(key)
+let myLeads = `["www.awesomelead.com"]`
+// This is use to convert string into Array
+myLeads = JSON.parse(myLeads)
+
+// This is use to convert Array into String
+myLeads = JSON.stringify(myLeads)
