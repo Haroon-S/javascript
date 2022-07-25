@@ -1,12 +1,12 @@
-// This is use to open ectension page in chrome
-// chrome://extensions/  
-
 {
     "manifest_version": 3,
-    "version": "1.1",
+    "version": "1.0",
     "name": "Leads tracker",
     "action": {
         "default_popup": "index.html",
         "default_icon": "icon.png"
-    }
+    },
+    "permissions": [
+        "tabs"
+    ]
 }
